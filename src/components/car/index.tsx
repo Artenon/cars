@@ -1,9 +1,8 @@
 import { FC } from "react";
-import { Button, Card, Col, Row, Accordion } from "react-bootstrap";
+import { Card, Col, Row, Accordion } from "react-bootstrap";
 import { IoMdPricetag } from "react-icons/io";
 import { BsChatLeftTextFill } from "react-icons/bs";
 import { MdContacts } from "react-icons/md";
-import { IoIosArrowDown } from "react-icons/io";
 import type { ICar } from "@/types/car";
 
 import styles from "./car.module.scss";
@@ -14,7 +13,7 @@ interface ICarProps {
 
 export const Car: FC<ICarProps> = ({ car }) => {
   return (
-    <Col>
+    <Col className="pb-4">
       <Card key={`${car.id}`}>
         <Row>
           <Col lg="4" className="d-flex align-items-center">
