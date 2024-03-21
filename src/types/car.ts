@@ -21,3 +21,12 @@ export interface TechnicalCharacteristics {
 export interface Option {
   option_name: string;
 }
+
+export interface IFilter {
+  brand: string;
+  model: string;
+  productionYear: number;
+  body: string;
+  mileage: { from: number; to: number };
+  price: { from: number; to: number };
+}
